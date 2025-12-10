@@ -1,10 +1,5 @@
 # My Github Website
 
-## Support my Work
-If my work has helped you, I’d truly appreciate your support!
-
-![Untitled design (10)](https://github.com/user-attachments/assets/127762f6-edae-4bea-989a-5296cf161ed3) 
-
 ## Let's Connect <img src="https://github.com/JayantGoel001/JayantGoel001/blob/master/GIF/Handshake.gif" height="30px" style="max-width:100%;">
   <a href="https://www.linkedin.com/in/tajamulkhann/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://https://www.instagram.com/tajamulkhannn/" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white"></a>
