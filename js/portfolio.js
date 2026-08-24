@@ -77,6 +77,35 @@
   }, { passive: true });
   updateHeader();
 
+  const heroSection = document.querySelector('.hero');
+  const finePointer = window.matchMedia('(pointer: fine)');
+  let heroPointerFrame;
+
+  if (heroSection && finePointer.matches && !reducedMotion.matches) {
+    const updateHeroDepth = (event) => {
+      window.cancelAnimationFrame(heroPointerFrame);
+      heroPointerFrame = window.requestAnimationFrame(() => {
+        const bounds = heroSection.getBoundingClientRect();
+        const x = ((event.clientX - bounds.left) / bounds.width - 0.5) * 2;
+        const y = ((event.clientY - bounds.top) / bounds.height - 0.5) * 2;
+        heroSection.style.setProperty('--hero-shift-x', `${x * 9}px`);
+        heroSection.style.setProperty('--hero-shift-y', `${y * 7}px`);
+        heroSection.style.setProperty('--portrait-shift-x', `${x * -5}px`);
+        heroSection.style.setProperty('--portrait-shift-y', `${y * -3}px`);
+      });
+    };
+
+    const resetHeroDepth = () => {
+      heroSection.style.setProperty('--hero-shift-x', '0px');
+      heroSection.style.setProperty('--hero-shift-y', '0px');
+      heroSection.style.setProperty('--portrait-shift-x', '0px');
+      heroSection.style.setProperty('--portrait-shift-y', '0px');
+    };
+
+    heroSection.addEventListener('pointermove', updateHeroDepth, { passive: true });
+    heroSection.addEventListener('pointerleave', resetHeroDepth);
+  }
+
   const revealElements = [...document.querySelectorAll('.reveal')];
   revealElements.forEach((element) => {
     const delay = Math.min(Number(element.dataset.delay || 0), 300);
@@ -143,10 +172,10 @@
 
   const roleElement = document.querySelector('.role-rotator');
   const roles = [
-    'Senior Data Scientist',
-    'AI Engineer',
-    'Machine Learning Engineer',
-    'GenAI & Agentic AI Practitioner'
+    'Data Scientist',
+    'AI & ML Engineer',
+    'Generative AI Engineer',
+    'Agentic AI Practitioner'
   ];
 
   if (roleElement && !reducedMotion.matches) {
