@@ -112,23 +112,34 @@
   }
 
   const sections = [...document.querySelectorAll('[data-section]')];
-  if ('IntersectionObserver' in window) {
-    const sectionObserver = new IntersectionObserver((entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+  let navigationTicking = false;
 
-      if (!visible) return;
-      navigationLinks.forEach((link) => {
-        const active = link.getAttribute('href') === `#${visible.target.id}`;
-        link.classList.toggle('is-active', active);
-        if (active) link.setAttribute('aria-current', 'page');
-        else link.removeAttribute('aria-current');
-      });
-    }, { rootMargin: '-22% 0px -62%', threshold: [0, 0.08, 0.25] });
+  const updateActiveNavigation = () => {
+    const headerHeight = header?.offsetHeight || 0;
+    const marker = window.scrollY + headerHeight + Math.min(window.innerHeight * 0.28, 260);
+    const atPageEnd = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
+    let activeSection = sections[0];
 
-    sections.forEach((section) => sectionObserver.observe(section));
-  }
+    sections.forEach((section) => {
+      if (section.offsetTop <= marker) activeSection = section;
+    });
+    if (atPageEnd) activeSection = sections[sections.length - 1];
+
+    navigationLinks.forEach((link) => {
+      const active = link.getAttribute('href') === `#${activeSection?.id}`;
+      link.classList.toggle('is-active', active);
+      if (active) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+    navigationTicking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (navigationTicking) return;
+    navigationTicking = true;
+    window.requestAnimationFrame(updateActiveNavigation);
+  }, { passive: true });
+  updateActiveNavigation();
 
   const roleElement = document.querySelector('.role-rotator');
   const roles = [
