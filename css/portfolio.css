@@ -837,16 +837,54 @@ h4 {
   line-height: 1.65;
 }
 
+.achievement-badges {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-top: 72px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.achievement-badges > div {
+  display: grid;
+  align-content: center;
+  min-height: 108px;
+  padding: 18px 16px;
+  border-right: 1px solid var(--border);
+}
+
+.achievement-badges > div:first-child {
+  border-left: 1px solid var(--border);
+}
+
+.achievement-badges strong {
+  color: var(--blue-deep);
+  font-family: var(--display);
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.achievement-badges span {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.64rem;
+  font-weight: 750;
+  letter-spacing: 0.065em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
 .expertise-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 76px;
+  margin-top: 38px;
   border-top: 1px solid var(--border);
   border-left: 1px solid var(--border);
 }
 
 .expertise-group {
-  min-height: 224px;
+  min-height: 286px;
   padding: 27px;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -870,7 +908,7 @@ h4 {
   padding-left: 14px;
   color: var(--muted);
   font-size: 0.82rem;
-  line-height: 1.85;
+  line-height: 1.72;
 }
 
 .expertise-group li::before {
@@ -1110,6 +1148,68 @@ h4 {
 
 .credentials-section {
   background: var(--surface);
+}
+
+.badge-showcase {
+  display: grid;
+  grid-template-columns: minmax(290px, 0.72fr) minmax(510px, 1.28fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 64px);
+  margin-bottom: 28px;
+  padding: clamp(28px, 4vw, 48px);
+  overflow: hidden;
+  color: var(--white);
+  background: #02050a;
+  border: 1px solid #15263c;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 50px rgba(11, 31, 58, 0.12);
+}
+
+.badge-showcase-copy .mini-label {
+  color: #79d6e4;
+}
+
+.badge-showcase-copy h3 {
+  max-width: 430px;
+  color: var(--white);
+  font-size: clamp(1.65rem, 2.6vw, 2.35rem);
+  letter-spacing: -0.025em;
+}
+
+.badge-showcase-copy > p:last-of-type {
+  max-width: 470px;
+  margin-top: 16px;
+  color: #aebdd1;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.badge-showcase picture {
+  min-width: 0;
+}
+
+.badge-showcase img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.resume-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 22px;
+}
+
+.resume-badges span {
+  padding: 7px 9px;
+  color: #dbe8f7;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 4px;
+  font-size: 0.64rem;
+  font-weight: 720;
+  letter-spacing: 0.035em;
 }
 
 .credential-grid {
@@ -1369,6 +1469,18 @@ h4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .achievement-badges {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .achievement-badges > div:nth-child(3) {
+    border-right: 0;
+  }
+
+  .achievement-badges > div:nth-child(n + 4) {
+    border-top: 1px solid var(--border);
+  }
+
   .contact-layout {
     grid-template-columns: minmax(0, 0.8fr) minmax(400px, 1.2fr);
     gap: 56px;
@@ -1521,6 +1633,14 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .badge-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .badge-showcase-copy {
+    max-width: 620px;
+  }
+
   .timeline-columns,
   .contact-layout {
     grid-template-columns: 1fr;
@@ -1601,6 +1721,22 @@ h4 {
 
   .about-layout {
     grid-template-columns: 1fr;
+  }
+
+  .achievement-badges {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .achievement-badges > div:nth-child(3) {
+    border-right: 1px solid var(--border);
+  }
+
+  .achievement-badges > div:nth-child(even) {
+    border-right: 0;
+  }
+
+  .achievement-badges > div:nth-child(n + 3) {
+    border-top: 1px solid var(--border);
   }
 
   .about-profile {
@@ -1746,6 +1882,27 @@ h4 {
   .expertise-grid {
     grid-template-columns: 1fr;
     margin-top: 54px;
+  }
+
+  .achievement-badges {
+    margin-top: 54px;
+  }
+
+  .achievement-badges > div {
+    min-height: 98px;
+    padding: 15px 13px;
+  }
+
+  .achievement-badges strong {
+    font-size: 1.18rem;
+  }
+
+  .badge-showcase {
+    padding: 24px 20px;
+  }
+
+  .badge-showcase-copy h3 {
+    font-size: 1.7rem;
   }
 
   .expertise-group {
