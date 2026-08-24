@@ -1,702 +1,302 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
   <head>
-    <title>Tajamul Khan Portfolio</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <title>Tajamul Khan | Senior Data Scientist &amp; AI Engineer</title>
+    <meta name="description" content="Portfolio of Tajamul Khan, a Senior Data Scientist and AI Engineer building practical machine learning, generative AI, analytics, and data products.">
+    <link rel="canonical" href="https://tajamulkhann.github.io/">
 
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Tajamul Khan | Senior Data Scientist &amp; AI Engineer">
+    <meta property="og:description" content="Data science, machine learning, generative AI, analytics, and engineering work by Tajamul Khan.">
+    <meta property="og:url" content="https://tajamulkhann.github.io/">
+    <meta property="og:image" content="https://tajamulkhann.github.io/images/tajamul-khan-portrait.png">
+    <meta property="og:image:alt" content="Professional portrait of Tajamul Khan">
+    <meta property="profile:first_name" content="Tajamul">
+    <meta property="profile:last_name" content="Khan">
 
-<style>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tajamul Khan | Senior Data Scientist &amp; AI Engineer">
+    <meta name="twitter:description" content="Explore practical data science, AI, machine learning, and analytics work by Tajamul Khan.">
+    <meta name="twitter:image" content="https://tajamulkhann.github.io/images/tajamul-khan-portrait.png">
+    <meta name="twitter:image:alt" content="Professional portrait of Tajamul Khan">
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="images/tajamul-khan-portrait.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script>document.documentElement.classList.replace('no-js', 'js');</script>
 
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tajamul Khan",
+        "url": "https://tajamulkhann.github.io/",
+        "image": "https://tajamulkhann.github.io/images/tajamul-khan-portrait.png",
+        "jobTitle": "Senior Data Scientist",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hyderabad",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://github.com/tajamulkhann",
+          "https://www.linkedin.com/in/tajamulkhann/",
+          "https://www.instagram.com/tajamul.datascientist/",
+          "https://www.kaggle.com/tajamulkhan",
+          "https://medium.com/@tajamulkhan",
+          "https://substack.com/@tajamulkhan"
+        ],
+        "knowsAbout": ["Data Science", "Machine Learning", "Generative AI", "Agentic AI", "Business Intelligence", "Statistical Analysis"]
+      }
+    </script>
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Senior Data Scientist</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-			  <li class="nav-item"><a href="#service-section" class="nav-link"><span>Certifications</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Tajamul</span></h1>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+    <header class="site-header" id="ftco-navbar">
+      <div class="nav-shell">
+        <a class="brand" href="index.html" aria-label="Tajamul Khan portfolio home">
+          <span class="brand-mark" aria-hidden="true">TK</span>
+          <span class="brand-name">Tajamul Khan</span>
+        </a>
 
-						<script>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="ftco-nav" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+        <nav class="site-nav" id="ftco-nav" aria-label="Primary navigation">
+          <a href="#home-section" data-nav-link>Home</a>
+          <a href="#about-section" data-nav-link>About</a>
+          <a href="#resume-section" data-nav-link>Experience</a>
+          <a href="#project-section" data-nav-link>Projects</a>
+          <a href="#service-section" data-nav-link>Certifications</a>
+          <a href="#contact-section" data-nav-link>Contact</a>
+        </nav>
+      </div>
+    </header>
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Scientist  ',
-						'ML Engineer  ',
-						'AI Engineer  '
-						];
+    <main id="main-content">
+      <section class="hero" id="home-section" data-section aria-labelledby="hero-title">
+        <canvas class="data-network" aria-hidden="true"></canvas>
+        <div class="hero-grid container">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span>Senior Data Scientist <b aria-hidden="true">•</b> AI &amp; GenAI Engineer</p>
+            <h1 id="hero-title">Tajamul Khan</h1>
+            <p class="hero-statement">I turn complex data and emerging AI into reliable products, clear decisions, and measurable business outcomes.</p>
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-						<br>
-						<br>
-			            <!-- <h3>Advanced Data Scientist</h3> -->
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://github.com/tajamulkhann" class="btn btn-primary py-3 px-4">Github</a> 
-							<a href="https://www.linkedin.com/in/tajamulkhann/" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a></p>
-
-
-							<div style="display: inline-block;">
-								<br>
-								<br>
-								<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-								<li class="ftco-animate"><a href="https://www.linkedin.com/in/tajamulkhann/"><span class="icon-linkedin"></span></a></li>
-								<li class="ftco-animate"><a href="https://www.instagram.com/tajamul.datascientist/"><span class="icon-instagram"></span></a></li>
-								<li class="ftco-animate"><a href="https://github.com/tajamulkhann"><span class="icon-github"></span></a></li>
-								<li class="ftco-animate"><a href="https://www.kaggle.com/tajamulkhan" title="Kaggle"><span style="font-weight:bold; font-size:1.5rem; color:#FFBD39;">K</span></a></li>
-								<li class="ftco-animate"><a href="https://medium.com/@tajamulkhan"><span class="icon-medium"></span></a></li>
-								<li class="ftco-animate"><a href="https://substack.com/@tajamulkhan" title="Substack"><span style="font-weight:bold; font-size:1.5rem; color:#FFBD39;">S</span></a></li>
-									</a>
-								   </li>
-								</ul>
-							</div>
-						</div>	
-		            </div>
-		        </div>
-	        </div>
-	    </div>
-	</div>
-</div>
-
-<!-- About Section Begins Here  -->
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Tajamul Khan</span></p>
-										<p><span class="title-s">Role: </span> <span>Senior Data Scientist</span></p>
-										<p><span class="title-s">Experience: </span> <span>7 Years</span></p>
-										<p><span class="title-s">Address: </span> <span>Hyderabad, India</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s"> </p>
-
-									<span>Generative AI</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>Machine Learning</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>Deep Learning</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>Python</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-
-									<span>SQL</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>Data Veteran with 7 years of expertise in data science, analytics, machine learning, and Gen AI, supported by a master’s degree in engineering. 
-									With hands-on experience at industry giants like Google and Amazon and a prestigious data degree from MIT, I excel in leading impactful projects, delivering actionable insights, 
-									and empowering teams through mentorship to drive measurable business outcomes.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>AI, Data Science &amp; Advanced Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, Heathcare, HR &amp; Marketing</span></li>
-									<li class="d-flex"><span>Education:</span> <span>PGDM, Master of Engineering</span></li>
-									<li class="d-flex"><span>Languages:</span> <span>Python, R, PySpark, SQL, KQL, DAX</span></li>
-									<li class="d-flex"><span>Visualization:</span> <span>Power BI &amp; Tableau</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Azure, AWS, Fabric, Excel, Git, Gen AI, Agentic AI</span></li>
-									<li class="d-flex"><span>Certificates:</span> <span>Microsoft: PL-300, DP-600, DP-700, AI-102</span></li>		
-								</ul>
-							</div>
-						</div>
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="100">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-<!-- Work Experience Section Begins Here  -->
-	<section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-		  <div class="col-md-10 heading-section text-center ftco-animate">
-			<h1 class="big big-2">Experience</h1>
-			<h2 class="mb-4">Experience</h2>
-			<!-- <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms, and project management.</p> -->
-		  </div>
-		</div>
-		<br>
-		<br>
-
-        <!-- Content Section -->
-        <div class="row">
-            <!-- Work Experience Column -->
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">Work Experience</span>
-                    
-                    <!-- Current Experience -->
-                    <div style="margin-top: 10px;">
-                        <h3 class="position" style="font-size: 1em; margin: 0;">Advanced Data Scientist</h3>
-                        <span class="position" style="font-size: 1em;">Eastman</span>
-						<span style="font-size: 1em; color: grey; margin-left: 10px;">- 2023 to Present</span>
-                            <br>Worked on analytics and AI projects across sentiment analysis, segmentation, RAG, generative AI, MLOps, sales, pricing, forecasting, HR, and supply-chain.<br>
-                        </p>
-                    </div>
-                    <br>
-
-                    <!-- Second Last Experience -->
-                    <div style="margin-top: 10px;">
-                        <h3 class="position" style="font-size: 1em; margin: 0;">Senior Data Executive - Data Scientist</h3>
-						<span class="position" style="font-size: 1em;">Google</span>
-                        <span style="font-size: 1em; color: grey; margin-left: 10px;">- 2019 to 2023</span>
-                        <p style="margin-top: 5px;">
-                            Worked on analytics and AI projects across sentiment analysis, segmentation, RAG, generative AI, MLOps, sales, pricing, forecasting, HR, and supply-chain.<br>
-                        </p>
-                        </p>
-                    </div>
-                    <br>
-
-                    <!-- Last Experience -->
-                    <div style="margin-top: 10px;">
-                        <h3 class="position" style="font-size: 1em; margin: 0;">Data Specialist</h3>
-                        <span class="position" style="font-size: 1em;">Amazon</span>
-						<span style="font-size: 1em; color: grey; margin-left: 10px;">- 2018 to 2019</span>
-                            <br>Executed EDA, preprocessing, and automated reporting using ML, Python, SQL, Power BI, and Excel.<br>
-                        </p>
-                    </div>
-                </div>
+            <div class="role-line">
+              <span class="role-label">Working across</span>
+              <span class="role-rotator" id="typing-animation" aria-hidden="true">Senior Data Scientist</span>
+              <span class="sr-only">Senior Data Scientist, AI Engineer, Machine Learning Engineer, and GenAI and Agentic AI practitioner.</span>
             </div>
 
-            <!-- Education Column -->
-            <div class="col-md-6">
-                <div class="resume-wrap ftco-animate">
-                    <span class="date">Academics</span>
-
-                    <!-- Recent Education -->
-                    <div style="margin-top: 5px;">
-                        <h3 class="position" style="font-size: 1em; margin: 0;">Post Graduate Diploma</h3>
-                        <span class="position" style="font-size: 1em;">MIT</span>
-						<span style="font-size: 1em; color: grey; margin-left: 10px;">- 2023 to 2024</span>
-                        <br>
-                        
-                        <p style="margin-top: 5px;">
-                            <strong>Major:</strong> Data Science, Artificial Intelligence
-                        </p>
-                    </div>
-                    <br>
-
-                    <!-- Second Education -->
-                    <div style="margin-top: 5px;">
-                        <h3 class="position" style="font-size: 1em; margin: 0;">Master of Technology</h3>
-						<span class="position" style="font-size: 0.9em;">Kurukshetra University</span>
-                        <span style="font-size: 1em; color: grey; margin-left: 10px;">- 2017 to 2019</span>
-						
-                        <p style="margin-top: 5px;">
-                            <strong>Major:</strong> Mathematics, Engineering
-                        </p>
-                    </div>
-                    <br>
-
-                    <!-- Third Education -->
-                    <div style="margin-top: 5px;">
-                        <h3 class="position" style="font-size: 1em; margin: 0;">Bachelor of Technology</h3>
-						<span class="position" style="font-size: 0.9em;">Kurukshetra University</span>
-                        <span style="font-size: 1em; color: grey; margin-left: 10px;">- 2014 to 2017</span>
-                        <br>
-
-                        <p style="margin-top: 5px;">
-                            <strong>Major:</strong> Mathematics, Engineering
-                        </p>
-                    </div>
-                    <br>
-
-                    <!-- Fourth Education -->
-                    <div style="margin-top: 5px;">
-                        <h3 class="position" style="font-size: 1em; margin: 0;">Diploma in Computer Applications</h3>
-						<span class="position" style="font-size: 0.9em;">NIELIT</span>
-                        <span style="font-size: 1em; color: grey; margin-left: 10px;">- 2013</span>
-						<p style="margin-top: 5px;">
-                            <strong>Major:</strong> Computer Science
-                        </p>
-                    </div>
-                </div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#project-section">
+                Explore My Work
+                <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+              </a>
+              <a class="button button-secondary" href="https://github.com/tajamulkhann" target="_blank" rel="noopener noreferrer">
+                View GitHub
+                <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 13 13 7M8 7h5v5"/></svg>
+              </a>
+              <a class="text-link" href="https://www.linkedin.com/in/tajamulkhann/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
             </div>
+
+            <div class="hero-socials" aria-label="Social profiles">
+              <a href="https://www.linkedin.com/in/tajamulkhann/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.instagram.com/tajamul.datascientist/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://github.com/tajamulkhann" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.kaggle.com/tajamulkhan" target="_blank" rel="noopener noreferrer">Kaggle</a>
+              <a href="https://medium.com/@tajamulkhan" target="_blank" rel="noopener noreferrer">Medium</a>
+              <a href="https://substack.com/@tajamulkhan" target="_blank" rel="noopener noreferrer">Substack</a>
+            </div>
+          </div>
+
+          <div class="hero-portrait reveal" data-delay="120">
+            <div class="portrait-blueprint" aria-hidden="true"><span>AI / ML</span><span>01</span></div>
+            <picture>
+              <source srcset="images/tajamul-khan-portrait.webp" type="image/webp">
+              <img src="images/tajamul-khan-portrait.png" width="1122" height="1402" alt="Professional portrait of Tajamul Khan" fetchpriority="high" decoding="async">
+            </picture>
+            <p class="portrait-caption"><span>Based in</span> Hyderabad, India</p>
+          </div>
         </div>
 
-    <!-- Projects Section -->
-    <section class="ftco-section" id="project-section">
+        <a class="scroll-cue" href="#about-section" aria-label="Scroll to About section">
+          <span>Scroll to explore</span>
+          <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M10 3v12M6 11l4 4 4-4"/></svg>
+        </a>
+      </section>
+
+      <aside class="proof-strip" aria-label="Career highlights">
+        <div class="container proof-grid">
+          <div class="proof-item reveal"><strong data-counter="7" data-suffix="+">7+</strong><span>Years in Data &amp; AI</span></div>
+          <div class="proof-item reveal" data-delay="60"><strong>Google <small>&amp;</small> Amazon</strong><span>Industry Experience</span></div>
+          <div class="proof-item reveal" data-delay="120"><strong data-counter="100" data-suffix="+">100+</strong><span>Projects Completed</span></div>
+          <div class="proof-item reveal" data-delay="180"><strong>Microsoft <small>&amp;</small> MIT</strong><span>Professional Credentials</span></div>
+        </div>
+      </aside>
+
+      <section class="section about-section" id="about-section" data-section aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">01 / About</p>
+            <h2 id="about-title">Technical depth.<br>Business clarity.</h2>
+            <p>A senior data and AI practitioner focused on building useful systems—not demonstrations that stop at the notebook.</p>
+          </div>
+
+          <div class="about-layout">
+            <article class="about-story reveal">
+              <p class="lead">Tajamul brings 7+ years of experience across data science, analytics, machine learning, and generative AI, supported by advanced engineering and data science education.</p>
+              <p>His work spans enterprise analytics, intelligent automation, segmentation, forecasting, natural language systems, MLOps, and decision support. Experience with Google, Amazon, Eastman, and Stolt-Nielsen informs an approach grounded in practical delivery, stakeholder trust, and measurable outcomes.</p>
+
+              <dl class="profile-facts">
+                <div><dt>Current focus</dt><dd>AI, Data Science &amp; Advanced Analytics</dd></div>
+                <div><dt>Domains</dt><dd>Shipping, retail, e-commerce, healthcare, HR &amp; marketing</dd></div>
+                <div><dt>Location</dt><dd>Hyderabad, India</dd></div>
+                <div><dt>Core stack</dt><dd>Python, SQL, PySpark, Azure, Fabric, Power BI &amp; Tableau</dd></div>
+              </dl>
+            </article>
+
+            <aside class="about-profile reveal" data-delay="100">
+              <picture>
+                <source srcset="images/tajamul-khan-headshot.webp" type="image/webp">
+                <img src="images/tajamul-khan-headshot.png" width="800" height="800" loading="lazy" decoding="async" alt="Headshot of Tajamul Khan in a black shirt">
+              </picture>
+              <div><p class="mini-label">What I bring</p><p>Rigorous analysis, production-minded AI, concise communication, and mentorship that helps teams move with confidence.</p></div>
+            </aside>
+          </div>
+
+          <div class="expertise-grid" aria-label="Areas of expertise">
+            <article class="expertise-group reveal"><h3>Data Science &amp; Machine Learning</h3><ul><li>Supervised learning</li><li>Unsupervised learning</li><li>Feature engineering</li><li>Model evaluation</li><li>MLOps</li></ul></article>
+            <article class="expertise-group reveal" data-delay="50"><h3>Generative &amp; Agentic AI</h3><ul><li>RAG systems</li><li>LLM applications</li><li>AI agents</li><li>Prompt engineering</li><li>Evaluation</li></ul></article>
+            <article class="expertise-group reveal" data-delay="100"><h3>Analytics &amp; Statistics</h3><ul><li>Statistical analysis</li><li>Experimentation</li><li>Forecasting</li><li>Segmentation</li><li>EDA</li></ul></article>
+            <article class="expertise-group reveal" data-delay="150"><h3>Data Engineering &amp; Cloud</h3><ul><li>Azure</li><li>Databricks</li><li>Microsoft Fabric</li><li>PySpark</li><li>Data pipelines</li></ul></article>
+            <article class="expertise-group reveal" data-delay="200"><h3>Business Intelligence</h3><ul><li>Power BI</li><li>Tableau</li><li>DAX</li><li>Data storytelling</li><li>Decision support</li></ul></article>
+            <article class="expertise-group reveal" data-delay="250"><h3>Programming &amp; Query Languages</h3><ul><li>Python</li><li>SQL</li><li>R</li><li>KQL</li><li>Git</li></ul></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="resume-section" data-section aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading section-heading-row reveal">
+            <div><p class="section-kicker">02 / Experience</p><h2 id="experience-title">A career built around applied intelligence.</h2></div>
+            <p>Enterprise experience and formal education, connected by a consistent focus on data-driven products and practical AI.</p>
+          </div>
+
+          <div class="timeline-columns">
+            <div>
+              <h3 class="timeline-heading"><span>Professional</span> Experience</h3>
+              <div class="timeline reveal">
+                <article class="timeline-item"><div class="timeline-meta"><time>2026 — Present</time><span>Hyderabad</span></div><h4>Senior Data Scientist</h4><p class="timeline-org">Stolt-Nielsen</p><p>Building AI and data products for maritime and logistics workflows, with an emphasis on automation, traceability, and decision support.</p></article>
+                <article class="timeline-item"><div class="timeline-meta"><time>2023 — 2026</time><span>Hyderabad</span></div><h4>Advanced Data Scientist</h4><p class="timeline-org">Eastman</p><p>Delivered analytics and AI initiatives spanning sentiment analysis, segmentation, generative AI, MLOps, sales, pricing, forecasting, HR, and supply chain.</p></article>
+                <article class="timeline-item"><div class="timeline-meta"><time>2019 — 2023</time><span>Hyderabad</span></div><h4>Senior Data Executive — Data Scientist</h4><p class="timeline-org">Google</p><p>Applied analytics, automation, and machine learning to operational data, reporting, quality, and decision-support workflows.</p></article>
+                <article class="timeline-item"><div class="timeline-meta"><time>2018 — 2019</time><span>Hyderabad</span></div><h4>Data Specialist</h4><p class="timeline-org">Amazon</p><p>Executed exploratory analysis, data preprocessing, quality workflows, and automated reporting using Python, SQL, Power BI, and Excel.</p></article>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="timeline-heading"><span>Academic</span> Foundation</h3>
+              <div class="timeline timeline-education reveal" data-delay="100">
+                <article class="timeline-item"><div class="timeline-meta"><time>2022 — 2023</time></div><h4>Post Graduate Program</h4><p class="timeline-org">MIT</p><p>Data Science and Machine Learning.</p></article>
+                <article class="timeline-item"><div class="timeline-meta"><time>2017 — 2019</time></div><h4>Master of Engineering</h4><p class="timeline-org">Kurukshetra University</p><p>Mathematics and engineering.</p></article>
+                <article class="timeline-item"><div class="timeline-meta"><time>2014 — 2017</time></div><h4>Bachelor of Technology</h4><p class="timeline-org">Kurukshetra University</p><p>Civil engineering.</p></article>
+                <article class="timeline-item"><div class="timeline-meta"><time>2013</time></div><h4>Diploma in Computer Applications</h4><p class="timeline-org">NIELIT</p><p>Computer science foundations.</p></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="project-section" data-section aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading section-heading-row reveal">
+            <div><p class="section-kicker">03 / Selected work</p><h2 id="projects-title">Projects that move from concept to application.</h2></div>
+            <p>Curated repositories and visual portfolios covering applied AI, machine learning, statistics, forecasting, NLP, and business intelligence.</p>
+          </div>
+
+          <div class="project-grid">
+            <a class="project-card project-card-featured reveal" href="https://github.com/tajamulkhann/Generative-AI-Projects" target="_blank" rel="noopener noreferrer">
+              <figure><img src="images/proj_1.png" width="1920" height="1080" alt="Preview of Tajamul Khan's Generative AI projects" loading="lazy" decoding="async"></figure>
+              <div class="project-content"><div class="project-topline"><span>Featured · Generative AI</span><span aria-hidden="true">↗</span></div><h3>Generative AI Projects</h3><p>Applied LLM systems, fine-tuning, multimodal AI, and practical use cases built to demonstrate modern AI engineering.</p><ul class="tag-list"><li>LLM applications</li><li>RAG</li><li>Multimodal AI</li></ul></div>
+            </a>
+
+            <a class="project-card project-card-featured reveal" data-delay="80" href="https://github.com/tajamulkhann/Machine-Learning-Projects" target="_blank" rel="noopener noreferrer">
+              <figure><img src="images/proj_2.png" width="1920" height="1080" alt="Preview of Tajamul Khan's Machine Learning projects" loading="lazy" decoding="async"></figure>
+              <div class="project-content"><div class="project-topline"><span>Featured · Machine Learning</span><span aria-hidden="true">↗</span></div><h3>Machine Learning Projects</h3><p>End-to-end supervised and unsupervised learning workflows, from preprocessing and evaluation to clear implementation.</p><ul class="tag-list"><li>Supervised ML</li><li>Unsupervised ML</li><li>Python</li></ul></div>
+            </a>
+
+            <a class="project-card reveal" href="https://github.com/tajamulkhann/Deep-Learning-Projects" target="_blank" rel="noopener noreferrer"><figure><img src="images/proj_3.png" width="1920" height="1080" alt="Preview of Tajamul Khan's Deep Learning projects" loading="lazy" decoding="async"></figure><div class="project-content"><div class="project-topline"><span>Deep Learning</span><span aria-hidden="true">↗</span></div><h3>Deep Learning Projects</h3><p>Practical neural-network implementations across modern deep-learning workflows and real-world datasets.</p><ul class="tag-list"><li>Neural networks</li><li>Applied AI</li></ul></div></a>
+            <a class="project-card reveal" data-delay="50" href="https://github.com/tajamulkhann/Statistical-Analysis-Projects" target="_blank" rel="noopener noreferrer"><figure><img src="images/proj_4.png" width="1920" height="1080" alt="Preview of Tajamul Khan's Statistical Analysis projects" loading="lazy" decoding="async"></figure><div class="project-content"><div class="project-topline"><span>Statistics</span><span aria-hidden="true">↗</span></div><h3>Statistical Analysis</h3><p>Hypothesis testing, data exploration, and decision-ready insight developed through rigorous statistical workflows.</p><ul class="tag-list"><li>Hypothesis testing</li><li>EDA</li></ul></div></a>
+            <a class="project-card reveal" data-delay="100" href="https://github.com/tajamulkhann/Time-Series-Analysis" target="_blank" rel="noopener noreferrer"><figure><img src="images/proj_5.png" width="1920" height="1080" alt="Preview of Tajamul Khan's Time Series Analysis projects" loading="lazy" decoding="async"></figure><div class="project-content"><div class="project-topline"><span>Forecasting</span><span aria-hidden="true">↗</span></div><h3>Time Series Analysis</h3><p>Forecasting projects that model trend, seasonality, and future behavior with statistical and deep-learning methods.</p><ul class="tag-list"><li>ARIMA</li><li>SARIMAX</li><li>Forecasting</li></ul></div></a>
+            <a class="project-card reveal" href="https://github.com/tajamulkhann/NLP-Projects" target="_blank" rel="noopener noreferrer"><figure><img src="images/proj_6.png" width="1920" height="1080" alt="Preview of Tajamul Khan's Natural Language Processing projects" loading="lazy" decoding="async"></figure><div class="project-content"><div class="project-topline"><span>Natural Language Processing</span><span aria-hidden="true">↗</span></div><h3>NLP Projects</h3><p>Text processing, embeddings, classification, and language understanding for applied NLP problems.</p><ul class="tag-list"><li>Text analytics</li><li>Embeddings</li></ul></div></a>
+            <a class="project-card reveal" data-delay="50" href="https://github.com/tajamulkhann/Exploratory-Data-Analysis-Projects" target="_blank" rel="noopener noreferrer"><figure><img src="images/proj_7.png" width="1920" height="1080" alt="Preview of Tajamul Khan's Exploratory Data Analysis projects" loading="lazy" decoding="async"></figure><div class="project-content"><div class="project-topline"><span>Data Analysis</span><span aria-hidden="true">↗</span></div><h3>Exploratory Data Analysis</h3><p>Structured investigations that clean messy data, reveal patterns, and turn raw datasets into clear stories.</p><ul class="tag-list"><li>EDA</li><li>Data storytelling</li></ul></div></a>
+            <a class="project-card reveal" data-delay="100" href="https://www.novypro.com/profile_about/tajamulkhan" target="_blank" rel="noopener noreferrer"><figure><img src="images/proj_8.png" width="1920" height="1080" alt="Preview of Tajamul Khan's Power BI dashboard portfolio" loading="lazy" decoding="async"></figure><div class="project-content"><div class="project-topline"><span>Business Intelligence</span><span aria-hidden="true">↗</span></div><h3>Power BI Dashboards</h3><p>Interactive business dashboards designed to make complex information clear, usable, and decision-ready.</p><ul class="tag-list"><li>Power BI</li><li>DAX</li></ul></div></a>
+            <a class="project-card reveal" href="https://public.tableau.com/app/profile/tajamul.khan/vizzes" target="_blank" rel="noopener noreferrer"><figure><img src="images/proj_9.png" width="1920" height="1080" alt="Preview of Tajamul Khan's Tableau visualization portfolio" loading="lazy" decoding="async"></figure><div class="project-content"><div class="project-topline"><span>Data Visualization</span><span aria-hidden="true">↗</span></div><h3>Tableau Portfolio</h3><p>Interactive visual stories that surface important trends, patterns, and actionable business insights.</p><ul class="tag-list"><li>Tableau</li><li>Visualization</li></ul></div></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section credentials-section" id="service-section" data-section aria-labelledby="credentials-title">
+        <div class="container">
+          <div class="section-heading section-heading-row reveal">
+            <div><p class="section-kicker">04 / Credentials</p><h2 id="credentials-title">Validated across AI, analytics, and data platforms.</h2></div>
+            <p>A compact selection of professional credentials from Microsoft, MIT, and Google.</p>
+          </div>
+
+          <div class="credential-grid">
+            <a class="credential-card reveal" href="https://learn.microsoft.com/api/credentials/share/en-us/Tajamulkhan/7608998C940697ED?sharingId=EF7CB78252919E24" target="_blank" rel="noopener noreferrer"><img src="images/proj_10.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Microsoft Azure AI Engineer credential preview"><div><span>Microsoft</span><h3>Azure AI Engineer</h3><p>View credential <b aria-hidden="true">↗</b></p></div></a>
+            <a class="credential-card reveal" data-delay="50" href="https://courses.edx.org/certificates/b411376a873a4a1186f5b8939f3f9572" target="_blank" rel="noopener noreferrer"><img src="images/proj_11.png" width="1920" height="1080" loading="lazy" decoding="async" alt="MIT machine learning credential preview"><div><span>MITx / edX</span><h3>Machine Learning</h3><p>View credential <b aria-hidden="true">↗</b></p></div></a>
+            <a class="credential-card reveal" data-delay="100" href="https://www.coursera.org/account/accomplishments/professional-cert/3AUVKHKF52ZP" target="_blank" rel="noopener noreferrer"><img src="images/proj_12.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Google Data Analytics Professional credential preview"><div><span>Google / Coursera</span><h3>Data Analytics Professional</h3><p>View credential <b aria-hidden="true">↗</b></p></div></a>
+            <a class="credential-card reveal" href="https://learn.microsoft.com/api/credentials/share/en-us/Tajamulkhan/AD600242B5C8212A?sharingId=EF7CB78252919E24" target="_blank" rel="noopener noreferrer"><img src="images/proj_13.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Microsoft Power BI Data Analyst credential preview"><div><span>Microsoft</span><h3>Power BI Data Analyst</h3><p>View credential <b aria-hidden="true">↗</b></p></div></a>
+            <a class="credential-card reveal" data-delay="50" href="https://learn.microsoft.com/en-us/users/tajamulkhan/credentials/fc2468eb9c248af8" target="_blank" rel="noopener noreferrer"><img src="images/proj_14.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Microsoft Fabric Analytics Engineer credential preview"><div><span>Microsoft</span><h3>Fabric Analytics Engineer</h3><p>View credential <b aria-hidden="true">↗</b></p></div></a>
+            <a class="credential-card reveal" data-delay="100" href="https://learn.microsoft.com/api/credentials/share/en-us/Tajamulkhan/E641E5D41A3C1734?sharingId=EF7CB78252919E24" target="_blank" rel="noopener noreferrer"><img src="images/proj_15.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Microsoft Fabric Data Engineer credential preview"><div><span>Microsoft</span><h3>Fabric Data Engineer</h3><p>View credential <b aria-hidden="true">↗</b></p></div></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact-section" data-section aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="contact-copy reveal">
+            <p class="section-kicker">05 / Contact</p>
+            <h2 id="contact-title">Let’s build something useful.</h2>
+            <p>For senior data science and AI opportunities, technical collaborations, mentoring, and consulting conversations.</p>
+            <a class="button button-light" href="mailto:tajamulk@gmail.com">Start a conversation <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h11M11 6l4 4-4 4"/></svg></a>
+          </div>
+
+          <div class="contact-panel reveal" data-delay="100">
+            <div class="contact-row"><span>Phone</span><a href="tel://7006542939">+91 70065 42939</a></div>
+            <div class="contact-row contact-email"><span>Email</span><a href="mailto:tajamulk@gmail.com">tajamulk@gmail.com</a><button type="button" data-copy-email aria-label="Copy email address">Copy</button></div>
+            <div class="contact-row"><span>GitHub</span><a href="https://github.com/tajamulkhann" target="_blank" rel="noopener noreferrer">github.com/tajamulkhann <b aria-hidden="true">↗</b></a></div>
+            <div class="contact-row"><span>Mentoring</span><a href="https://topmate.io/tajamulkhan/1839257/pay" target="_blank" rel="noopener noreferrer">Book on Topmate <b aria-hidden="true">↗</b></a></div>
+            <div class="contact-socials" aria-label="More social profiles">
+              <a href="https://www.linkedin.com/in/tajamulkhann/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.instagram.com/tajamul.datascientist/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.kaggle.com/tajamulkhan" target="_blank" rel="noopener noreferrer">Kaggle</a>
+              <a href="https://medium.com/@tajamulkhan" target="_blank" rel="noopener noreferrer">Medium</a>
+              <a href="https://substack.com/@tajamulkhan" target="_blank" rel="noopener noreferrer">Substack</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
       <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/tajamulkhann/Generative-AI-Projects" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <p>A curated set of Generative AI projects I built—covering LLM apps, fine-tuning, multimodal AI, and real-world use cases — showcasing my expertise in applied AI and modern large language models.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/tajamulkhann/Machine-Learning-Projects" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <p>A collection of end-to-end machine learning projects—covering supervised and unsupervised learning, preprocessing and real-world ML workflows — showcasing my practical ML skills and hands-on implementations.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/tajamulkhann/Deep-Learning-Projects" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <p>A collection of end-to-end machine learning projects—covering supervised and unsupervised learning, preprocessing, and real-world ML workflows—showcasing my practical ML skills and hands-on implementations.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/tajamulkhann/Statistical-Analysis-Projects" class="block-20 zoom-effect" style="background-image: url('images/proj_4.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <p>A collection of statistical analysis and EDA projects I built, showcasing practical hypothesis testing, data exploration, and insights—designed to highlight my expertise in statistics for real-world decision-making.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/tajamulkhann/Time-Series-Analysis" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <p>A set of time series forecasting projects I built—covering ARIMA, SARIMAX, LSTM, and real-world trend analysis—showcasing my ability to model patterns, seasonality, and future predictions with accuracy.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/tajamulkhann/NLP-Projects" class="block-20 zoom-effect" style="background-image: url('images/proj_6.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <p>A collection of NLP projects I built—focusing on text processing, embeddings, classification, and real-world language understanding—showcasing my expertise in turning raw text into actionable insights.</p>
-				</div>
-			  </div>
-			</div>
-	  	</div>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/tajamulkhann/Exploratory-Data-Analysis-Projects" class="block-20 zoom-effect" style="background-image: url('images/proj_7.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <p>A set of EDA projects I built to uncover patterns, clean messy data, and extract meaningful insights—showcasing my ability to turn raw datasets into clear, decision-ready stories.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://www.novypro.com/profile_about/tajamulkhan" class="block-20 zoom-effect" style="background-image: url('images/proj_8.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <p>A curated collection of Power BI dashboards I designed—transforming raw business data into clear, interactive visuals that drive informed decisions and showcase my end-to-end BI skills.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://public.tableau.com/app/profile/tajamul.khan/vizzes" class="block-20 zoom-effect" style="background-image: url('images/proj_9.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <p>A showcase of interactive Tableau dashboards I created—turning complex datasets into intuitive visual stories that highlight trends, patterns, and actionable insights.</p>
-				</div>
-			  </div>
-			</div>
-	  	</div>
-
-	 <!-- Service Section -->
-	 <section class="ftco-section" id="service-section">
-		<div class="container">
-		  <div class="row justify-content-center mb-5 pb-5">
-			<div class="col-md-10 heading-section text-center ftco-animate">
-			  <h1 class="big big-2">Certifications</h1>
-			  <h2 class="mb-4">Certifications</h2>
-			</div>
-		  </div>
-		  <div class="row d-flex">
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://learn.microsoft.com/api/credentials/share/en-us/Tajamulkhan/7608998C940697ED?sharingId=EF7CB78252919E24" class="block-20 zoom-effect" style="background-image: url('images/proj_10.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <p>Microsoft Azure AI Engineer</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://courses.edx.org/certificates/b411376a873a4a1186f5b8939f3f9572" class="block-20 zoom-effect" style="background-image: url('images/proj_11.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <p>MIT Certified: Machine Learning Engineer</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry">
-				<a href="https://www.coursera.org/account/accomplishments/professional-cert/3AUVKHKF52ZP" class="block-20 zoom-effect" style="background-image: url('images/proj_12.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <p>Google Data Analytics Professional</p>
-				</div>
-			  </div>
-			</div>
-		  </div>
-	  <br>
-		  <!-- added justify-content-center to center align the last two projects -->
-		  <div class="row d-flex justify-content-center">  
-			  <div class="col-md-4 d-flex ftco-animate">
-				  <div class="blog-entry justify-content-end">
-				  <a href="https://learn.microsoft.com/api/credentials/share/en-us/Tajamulkhan/AD600242B5C8212A?sharingId=EF7CB78252919E24" class="block-20 zoom-effect" style="background-image: url('images/proj_13.png');">
-				  </a>
-				  <div class="text mt-3 float-right d-block">
-					<p>Microsoft Power BI Data Analyst</p>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4 d-flex ftco-animate">
-				  <div class="blog-entry justify-content-end">
-				  <a href="https://learn.microsoft.com/en-us/users/tajamulkhan/credentials/fc2468eb9c248af8" class="block-20 zoom-effect" style="background-image: url('images/proj_14.png');">
-				  </a>
-				  <div class="text mt-3 float-right d-block">
-					<p>Microsoft Fabric Analytics Engineer</p>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-md-4 d-flex ftco-animate">
-				  <div class="blog-entry justify-content-end">
-				  <a href="https://learn.microsoft.com/api/credentials/share/en-us/Tajamulkhan/E641E5D41A3C1734?sharingId=EF7CB78252919E24" class="block-20 zoom-effect" style="background-image: url('images/proj_15.png');">
-				  </a>
-				  <div class="text mt-3 float-right d-block">
-					<p>Microsoft Fabric Data Engineer</p>
-				  </div>
-				</div>
-			  </div>
-		   </div>
-		</div>
-
-<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-  <div class="container">
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section text-center ftco-animate">
-        <h1 class="big big-2">Contact</h1>
-        <h2 class="mb-4">Contact</h2>
+        <a class="brand brand-footer" href="index.html" aria-label="Return to portfolio home"><span class="brand-mark" aria-hidden="true">TK</span><span class="brand-name">Tajamul Khan</span></a>
+        <p>Senior Data Scientist · AI &amp; GenAI Engineer</p>
+        <p>© <span data-current-year>2026</span> Tajamul Khan</p>
       </div>
-    </div>
+    </footer>
 
-    <div class="row d-flex contact-info mb-5">
-      <!-- Phone -->
-      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-        <div class="align-self-stretch box p-4 text-center">
-          <div class="icon d-flex align-items-center justify-content-center">
-            <span class="icon-phone2"></span>
-          </div>
-          <h3 class="mb-4">Phone</h3>
-          <p><a href="tel://7006542939">+91 7006542939</a></p>
-        </div>
-      </div>
-
-      <!-- Email -->
-      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-        <div class="align-self-stretch box p-4 text-center">
-          <div class="icon d-flex align-items-center justify-content-center">
-            <span class="icon-paper-plane"></span>
-          </div>
-          <h3 class="mb-4">Email</h3>
-          <p><a href="mailto:tajamulk@gmail.com">tajamulk@gmail.com</a></p>
-        </div>
-      </div>
-
-      <!-- Portfolio -->
-      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-        <div class="align-self-stretch box p-4 text-center">
-          <div class="icon d-flex align-items-center justify-content-center">
-            <span class="icon-github"></span>
-          </div>
-          <h3 class="mb-4">Github</h3>
-          <p><a href="https://github.com/tajamulkhann" target="_blank">Check Here</a></p>
-        </div>
-      </div>
-
-      <!-- Resume -->
-      <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-        <div class="align-self-stretch box p-4 text-center">
-          <div class="icon d-flex align-items-center justify-content-center">
-            <span class="icon-globe"></span>
-          </div>
-          <h3 class="mb-4">Hyderabad</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-		  <div class="container">
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h3>
-						<div>Have a <span>Question?</span></div>
-						<br>
-						<div><a href="https://topmate.io/tajamulkhan/1839257/pay" class="btn btn-primary py-3 px-5">Click Here</a></div>
-					</h3>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/tajamulkhann/"><span class="icon-linkedin"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.instagram.com/tajamul.datascientist/"><span class="icon-instagram"></span></a></li>
-					  <li class="ftco-animate"><a href="https://github.com/tajamulkhann"><span class="icon-github"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.kaggle.com/tajamulkhan" title="Kaggle"><span style="font-weight:bold; font-size:1.5rem; color:#FFBD39;">K</span></a></li>
-					  <li class="ftco-animate"><a href="https://medium.com/@tajamulkhan"><span class="icon-medium"></span></a></li>
-					  <li class="ftco-animate"><a href="https://substack.com/@tajamulkhan" title="Substack"><span style="font-weight:bold; font-size:1.5rem; color:#FFBD39;">S</span></a></li>
-				</ul>
-		   </div>
-   </div>
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
+    <p class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></p>
+    <script src="js/portfolio.js" defer></script>
   </body>
 </html>
