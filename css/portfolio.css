@@ -703,6 +703,40 @@ h4 {
   width: 100%;
 }
 
+.hero-socials .hero-booking-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 34px;
+  margin-top: -2px;
+  padding: 0 13px;
+  border: 1px solid rgba(25, 93, 196, 0.2);
+  border-radius: 999px;
+  color: var(--blue-deep);
+  background: rgba(25, 93, 196, 0.08);
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.hero-socials .hero-booking-link::after {
+  display: none;
+}
+
+.hero-socials .hero-booking-link span {
+  font-size: 0.86rem;
+  transition: transform 180ms ease;
+}
+
+.hero-socials .hero-booking-link:hover {
+  border-color: var(--blue);
+  color: var(--white);
+  background: var(--blue);
+  transform: translateY(-1px);
+}
+
+.hero-socials .hero-booking-link:hover span {
+  transform: translate(2px, -2px);
+}
+
 .hero-portrait {
   position: relative;
   align-self: end;
