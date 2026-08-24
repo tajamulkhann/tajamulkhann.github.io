@@ -27,6 +27,9 @@
 
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="images/tajamul-khan-portrait.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/portfolio.css">
     <script>document.documentElement.classList.replace('no-js', 'js');</script>
 
@@ -76,6 +79,7 @@
           <a href="#resume-section" data-nav-link>Experience</a>
           <a href="#project-section" data-nav-link>Projects</a>
           <a href="#service-section" data-nav-link>Certifications</a>
+          <a href="#recognition-section" data-nav-link>Recognition</a>
           <a href="#contact-section" data-nav-link>Contact</a>
         </nav>
       </div>
@@ -174,7 +178,6 @@
           <div class="achievement-badges reveal" aria-label="Career impact and community highlights">
             <div><strong>$27M</strong><span>Revenue impact</span></div>
             <div><strong>$5M</strong><span>Quarterly savings</span></div>
-            <div><strong>95.3%</strong><span>RAG accuracy</span></div>
             <div><strong>130K+</strong><span>LinkedIn community</span></div>
             <div><strong>100K+</strong><span>Instagram community</span></div>
             <div><strong>2x</strong><span>Times Square featured</span></div>
@@ -290,10 +293,42 @@
         </div>
       </section>
 
+      <section class="section recognition-section" id="recognition-section" data-section aria-labelledby="recognition-title">
+        <div class="container">
+          <div class="section-heading section-heading-row reveal">
+            <div><p class="section-kicker">05 / Rewards &amp; Recognition</p><h2 id="recognition-title">Recognition beyond the work.</h2></div>
+            <p>Independent features and creator rankings reflecting sustained contributions to data science, AI and professional learning.</p>
+          </div>
+
+          <div class="recognition-grid">
+            <article class="recognition-card recognition-times-square reveal">
+              <div class="times-square-gallery">
+                <picture><img src="images/recognition-times-square-topmate.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Tajamul Khan featured on a Topmate billboard at Times Square, New York City"></picture>
+                <picture><img src="images/recognition-times-square-feature.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Tajamul Khan featured on a second billboard at Times Square, New York City"></picture>
+              </div>
+              <div class="recognition-copy"><p class="mini-label">2x Global Feature</p><h3>Featured at Times Square, NYC</h3><p>Featured twice in Times Square for contributions to data science, AI education and professional mentorship.</p></div>
+            </article>
+
+            <article class="recognition-card recognition-creator reveal" data-delay="80">
+              <picture><img src="images/recognition-top-creators.webp" width="640" height="800" loading="lazy" decoding="async" alt="Favikon creator ranking showing Tajamul Khan ranked number 17 for Data Science in India"></picture>
+              <div class="recognition-copy"><p class="mini-label">Creator Ranking</p><h3>🏆 Top 20 Creators · Data Science</h3><p>Ranked #17 among data science creators in India.</p></div>
+            </article>
+
+            <article class="recognition-card recognition-rankings reveal">
+              <div class="recognition-copy"><p class="mini-label">Favikon Rankings</p><h3>Top 1% Creator Rankings</h3><p>Recognized among leading data science and LinkedIn creators in India and worldwide.</p></div>
+              <div class="ranking-gallery">
+                <picture><img src="images/recognition-data-science-ranking.webp" width="1280" height="495" loading="lazy" decoding="async" alt="Favikon Data Science rankings for Tajamul Khan in India and worldwide"></picture>
+                <picture><img src="images/recognition-linkedin-ranking.webp" width="1280" height="515" loading="lazy" decoding="async" alt="Favikon LinkedIn rankings for Tajamul Khan in India and worldwide"></picture>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section contact-section" id="contact-section" data-section aria-labelledby="contact-title">
         <div class="container contact-layout">
           <div class="contact-copy reveal">
-            <p class="section-kicker">05 / Contact</p>
+            <p class="section-kicker">06 / Contact</p>
             <h2 id="contact-title">Let’s build something useful.</h2>
             <p>For senior data science and AI opportunities, technical collaborations, mentoring, and consulting conversations.</p>
             <a class="button button-light" href="mailto:tajamulk@gmail.com">Start a conversation <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h11M11 6l4 4-4 4"/></svg></a>
